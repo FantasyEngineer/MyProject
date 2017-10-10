@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:paddingBottom="20dp"
+    android:scrollbars="none"
+    tools:context="com.hjg.hjgapplife.activity.viewpager.ViewPagerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最普通的Viewpager展示效果" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="@dimen/paddingLeft"
+            android:layout_marginRight="@dimen/paddingRight" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="展示多个item的viewPager" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/paddingLeft"
+            android:layout_marginRight="@dimen/paddingRight" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="无线循环向左的viewPager" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="@dimen/paddingLeft"
+            android:layout_marginRight="@dimen/paddingRight" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="两边漏边且无限循环的viewPager" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:clipChildren="false"
+            android:layerType="software"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="中间放大两边缩小的viewPager" />
+
+        <RelativeLayout
+            android:id="@+id/rl_clp_container"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:clipChildren="false">
+
+            <com.hjg.baseapp.widget.viewPager.ClipViewPager
+                android:id="@+id/cvp"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+            </com.hjg.baseapp.widget.viewPager.ClipViewPager>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

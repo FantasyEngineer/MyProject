@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="scrolllayout-1.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/c4ccb83c8b0ad597f68f7ff0753240cc245c0f92/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/c4ccb83c8b0ad597f68f7ff0753240cc245c0f92/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yinglan.scrolllayout/scrolllayout/1.0.2/9a002cb6f89a6aa7ff204bf4e81a75968c4d0a5c/scrolllayout-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--可以自定义图片大小的radiobutton-->
+    <declare-styleable name="MyRadioButton">
+        <attr name="drawableSize" format="dimension" />
+        <attr name="drawableTop" format="reference" />
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawableRight" format="reference" />
+        <attr name="drawableBottom" format="reference" />
+    </declare-styleable>
+
+    <!--圆形头像-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <!--上下滚动的textview-->
+    <declare-styleable name="VerticalTextview">
+        <attr name="vt_textSize" format="dimension" />
+        <attr name="vt_textColor" format="color" />
+        <attr name="vt_padding" format="dimension" />
+        <!--<attr name="vt_duringTime" format="integer" />-->
+        <!--<attr name="vt_switchTime" format="integer" />-->
+    </declare-styleable>
+
+
+    <!-- PagerSlidingTabStrip -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="selectedTabTextColor" format="color" />
+        <attr name="isTabIndicator_fill" format="boolean" />
+        <attr name="tabTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!--自定义数字加减控件-->
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension" />
+        <attr name="btnTextSize" format="dimension" />
+    </declare-styleable>
+
+
+    <!--下拉背景变大-->
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+
+</resources>

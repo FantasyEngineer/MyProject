@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="F:\MyApplication\GuideView\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b82e579bcd9aeee501e5ecb52ba97b0a8b340236">
+        <dex dex="F:\MyApplication\app\build\intermediates\pre-dexed\debug\classes_6c6c8c81310cabc1edbd14a25bfa1354f0f7c659.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\MyApplication\Shimmer\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d2e76b1afa9c529de0531757c87cdf9ba280cafb">
+        <dex dex="F:\MyApplication\app\build\intermediates\pre-dexed\debug\classes_8aaca0391d60e3443ccbdb4ab0522f409c316e63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\MyApplication\PupWindowlib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="163559e9199a37b6a5ef4f18a0f7d6f64a31af1f">
+        <dex dex="F:\MyApplication\app\build\intermediates\pre-dexed\debug\classes_ba21f9ef37dc9341b50e7a690b30db15f93362d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\MyApplication\FlycoTabLayout_Lib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="80813efa5be1efbbc9488670bf500af9433b5d32">
+        <dex dex="F:\MyApplication\app\build\intermediates\pre-dexed\debug\classes_224651558dfca264429ba210e577a9a497cfee86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\MyApplication\BaseApp\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5f3e0043d3fa2a22ed38dff24545c5a7a3eb0484">
+        <dex dex="F:\MyApplication\app\build\intermediates\pre-dexed\debug\classes_941316351189d5e60674067ae86bcc9b1bafacc5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\MyApplication\transitionhelper\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4f91d1216d9b3c3dcb0e16716c8636ae49acb3b3">
+        <dex dex="F:\MyApplication\app\build\intermediates\pre-dexed\debug\classes_a124623f6cf25acb4afb8fdd3525f1fcb038ca7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\MyApplication\bannerlib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b0b767554a436fe816ed17a1b94835156a203960">
+        <dex dex="F:\MyApplication\app\build\intermediates\pre-dexed\debug\classes_12fe7883b6a944c3d6e07e677f25b1d13ccacf10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\MyApplication\SwipeBackLib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="88d9119bc3a791bf419d21bf689aa9238135834f">
+        <dex dex="F:\MyApplication\app\build\intermediates\pre-dexed\debug\classes_ea5b92c6fe610659fac8bc5a19c14e04de5f4e4d.jar" />
+    </item>
+
+</items>

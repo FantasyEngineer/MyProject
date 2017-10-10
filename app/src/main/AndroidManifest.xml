@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hjg.hjgapplife">
+
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 侧滑时震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 悬浮窗 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读写 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 使用相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 使用定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 读取电话记录 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读写设置 -->
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_luncher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_luncher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.transitionhelper.PhotoShowActivity" />
+        <activity android:name=".activity.transitionhelper.btnTransActivity" />
+        <activity android:name=".activity.greenDao.GreenDaoActivity" />
+        <activity android:name=".activity.Butterknife.ButterknifeActivity" />
+        <activity android:name=".activity.viewpager.ViewPagerActivity" />
+        <activity android:name=".activity.ButtonStyleActivity" />
+        <activity android:name=".activity.StringDealActivity" />
+        <activity android:name=".activity.seclectCity.SelectCityActivity" />
+        <activity android:name=".activity.titlepage.CommonTabActivity" />
+        <activity android:name=".activity.titlepage.SlidingTabActivity" />
+        <activity android:name=".activity.titlepage.SegmentTabActivity" />
+        <activity android:name=".activity.notification.NoticaficationActivity" />
+        <activity android:name=".activity.SwipeBackActivity" />
+        <activity android:name=".activity.titlepage.PagerMainActivity" />
+        <activity android:name=".activity.titlepage.PageSlidTabActivity" />
+        <activity android:name=".activity.otherBarRender.OntherBarRenderActivity" />
+        <activity android:name=".activity.otherBarRender.LeftbackActivity" />
+        <activity android:name=".activity.WindowManager.WindowAlertActivity" />
+        <activity android:name=".activity.cardlayout.CardStackViewActivity" />
+        <activity android:name=".activity.dragRecycleView.DragRecycleListActivity" />
+        <activity android:name=".activity.animation.CardFlipActivity" />
+        <activity android:name=".activity.animation.AnimationListActivity" />
+        <activity android:name=".activity.animation.ScaleActivity" />
+        <activity android:name=".activity.animation.RotationActivity" />
+        <activity android:name=".activity.animation.BezierLineActivity" />
+        <activity android:name=".activity.animation.ShimmerActivity" />
+        <activity android:name=".activity.pupwindow.PupWindowActivity" />
+        <activity android:name=".activity.GifActivity" />
+        <activity android:name=".activity.animation.LikeBDMapActivity" />
+        <activity android:name=".activity.animation.LikeBDMap2Activity" />
+        <activity android:name=".activity.animation.LikeBDMapRecyActivity" />
+        <activity android:name=".activity.zoomview.PullToZoomScrollActivity" />
+        <activity android:name=".activity.zoomview.PullToZoomListActivity" />
+        <activity android:name=".activity.zoomview.PullToZoomMainActivity" />
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".activity.takephoto.LikeWeChatSelectPhotoActivity" />
+        <activity android:name=".activity.animation.AutoUPChangeActivity" />
+        <activity
+            android:name=".activity.BLE.BleClientActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.BLE.BleServerActivity" />
+        <activity android:name=".activity.BLE.BleMainActivity" />
+        <activity android:name=".activity.BLE.TestBLEActivity" />
+        <activity
+            android:name=".activity.webview.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.recycleViewAbout.AboutRecycleViewMainActivity" />
+        <activity android:name=".activity.GIFshowFunctionAcitivity" />
+        <activity android:name=".activity.takephoto.PhotoDealMainActivity"></activity>
+    </application>
+
+</manifest>

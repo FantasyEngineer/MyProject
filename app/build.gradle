@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.hjg.hjgapplife"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+//            storeFile file('C:\\Users\\Administrator\\release.keystore')//添加签名文件的路径
+            storeFile file('../release.keystore')
+            storePassword 'houjiguo'
+            keyAlias 'androiddebugkey'
+            keyPassword 'houjiguo'
+        }
+        debug {
+            storeFile file('../release.keystore')
+            storePassword 'houjiguo'
+            keyAlias 'androiddebugkey'
+            keyPassword 'houjiguo'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            //不提供混淆文件，下面两个属性不能为true
+            minifyEnabled false
+            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+            zipAlignEnabled true
+            signingConfig signingConfigs.release// 配置release包的签名
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+        }
+    }
+    //这个设置编译的lint开关。程序在build的时候，会执行lint检查，有任何错误或者警告提示，都会终止构建，我们可以将其关掉。
+//    lintOptions {
+//        abortOnError false
+//    }
+
+}
+
+//ButterKnife的使用
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+    }
+}
+
+//版本号升级会执行删除表，重建表，数据会丢失
+greendao {
+    schemaVersion 1001
+    targetGenDir 'src/main/java'
+}
+//MultiImageSelector使用的到的
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':BaseApp')
+    compile project(':bannerlib')
+    compile project(':transitionhelper')
+    // This is only needed if you want to use encrypted databases
+    //butterknife
+    compile project(':FlycoTabLayout_Lib')
+    compile project(':SwipeBackLib')
+    compile project(path: ':Shimmer')
+    compile project(path: ':PupWindowlib')
+    compile project(path: ':GuideView')
+    compile project(':material-spinner-1.0.5')
+    //    仿微信多图选择
+    //   开关按钮
+    //强大的BaseRecyclerViewAdapterHelper
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'net.zetetic:android-database-sqlcipher:3.5.6'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.github.lovetuzitong:MultiImageSelector:1.2'
+    compile 'com.kyleduo.switchbutton:library:1.4.4'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    apt 'com.jakewharton:butterknife-compiler:8.5.1'
+}

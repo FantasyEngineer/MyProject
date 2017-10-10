@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaseApp/BaseApp.iml" filepath="$PROJECT_DIR$/BaseApp/BaseApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" filepath="$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GuideView/GuideView.iml" filepath="$PROJECT_DIR$/GuideView/GuideView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PupWindowlib/PupWindowlib.iml" filepath="$PROJECT_DIR$/PupWindowlib/PupWindowlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Shimmer/Shimmer.iml" filepath="$PROJECT_DIR$/Shimmer/Shimmer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeBackLib/SwipeBackLib.iml" filepath="$PROJECT_DIR$/SwipeBackLib/SwipeBackLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bannerlib/bannerlib.iml" filepath="$PROJECT_DIR$/bannerlib/bannerlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/material-spinner-1.0.5/material-spinner-1.0.5.iml" filepath="$PROJECT_DIR$/material-spinner-1.0.5/material-spinner-1.0.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transitionhelper/transitionhelper.iml" filepath="$PROJECT_DIR$/transitionhelper/transitionhelper.iml" />
+    </modules>
+  </component>
+</project>
